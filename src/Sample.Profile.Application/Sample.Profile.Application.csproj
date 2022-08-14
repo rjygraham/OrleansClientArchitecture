@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastExpressionCompiler" Version="3.3.3" />
+    <PackageReference Include="FluentValidation" Version="11.2.0" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="4.0.0-preview2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Orleans.Cqrs.Core\Orleans.Cqrs.Core.csproj" />
+    <ProjectReference Include="..\Orleans.Cqrs.FluentValidation\Orleans.Cqrs.FluentValidation.csproj" />
+    <ProjectReference Include="..\Orleans.Cqrs.Mapster\Orleans.Cqrs.Mapster.csproj" />
+    <ProjectReference Include="..\Sample.Profile.Domain\Sample.Profile.Domain.csproj" />
+    <ProjectReference Include="..\Sample.Profile.Models\Sample.Profile.Models.csproj" />
+  </ItemGroup>
+
+</Project>
